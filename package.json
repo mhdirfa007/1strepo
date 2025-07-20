@@ -1,0 +1,22 @@
+{
+  "name": "habit-tracker-app",
+  "version": "1.0.0",
+  "description": "A professional habit tracker app with interactive dashboard and deep analytics",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-server": "cd backend && npm install",
+    "install-client": "cd frontend && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": ["habit-tracker", "react", "node.js", "mongodb", "analytics"],
+  "author": "Your Name",
+  "license": "MIT"
+}
